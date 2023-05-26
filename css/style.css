@@ -3,3 +3,210 @@
     margin: 0;
     /*outline: red solid 1px;*/
 }
+
+body {
+    background-color: #21252B;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    background-color: #282C34;
+    padding: 20px;
+}
+
+h1 {
+    color: #E06C70;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2em;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h2 {
+    color: #D19A60;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    color: #ABB2B1;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ABB2B1;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 1.5em;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+strong {
+    color: #98C36E
+}
+
+ul {
+    color: #ABB2B1;
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 60px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+ol {
+    color: #ABB2B1;
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 60px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+ol li {
+    margin-top: 1em;
+}
+
+.banner {
+    width: 100%;
+    height: 250px;
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #333842;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 0px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0px;
+}
+
+nav ul li {
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ABB2B1;
+}
+
+.presentacion-programacion-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.img-presentacion-programacion-3 {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+.parrafo-presentacion-programacion-3 {
+    width: 70%;
+    padding: 30px;
+}
+
+.quote {
+    color: #5C6370;
+    font-family: 'Source Code Pro', monospace;
+    font-style: italic;
+    border-left: 5px solid #5C6370;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reference-quote {
+    text-align: right;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 1em;
+}
+
+.parallax-unidad {
+    /* Set a specific height */
+    height: 250px;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+#parallax-unidad-1 {
+    /* The image used */
+    background-image: url("../images/programando-html.jpeg");
+}
+
+#parallax-unidad-2 {
+    /* The image used */
+    background-image: url("../images/programando-javascript.jpeg");
+}
+
+#parallax-unidad-3 {
+    /* The image used */
+    background-image: url("../images/programacion-csharp.webp");
+}
+
+#parallax-unidad-4 {
+    /* The image used */
+    background-image: url("../images/programando-seguridad.jpeg");
+}
+
+.caption-parallax {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.caption-parallax-content {
+    background-color: #21252B;
+    padding: 18px;
+    
+    color: #ABB2B1;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+#img-unidad-2 {
+    width: 100%;
+    max-width: 450px;
+    margin: 40px auto;
+}
+
+#img-unidad-2 img {
+    width: 100%;
+}
