@@ -78,11 +78,6 @@ p {
     margin-bottom: 1em;
 }
 
-label {
-    color: #ABB2B1;
-    font-family: 'Source Code Pro', monospace;
-}
-
 strong {
     color: #98C36E
 }
@@ -164,100 +159,43 @@ ol li {
 }
 
 .logo {
-    margin-top: 15px;
     width: 50px;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {    
-    .logo {
-        margin-top: 0px;
-    }
-}
-
 .logo img {
     width: 100%;
 }
 
-.nav-content {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #333842;
-    position: relative;
-    z-index: 999;
-}
-
-@media screen and (min-width: 768px) {    
-    .nav-content {
-        position: sticky;
-        top: 0px;    
-    }
 }
 
 .nav {
     font-family: 'Source Code Pro', monospace;
     background-color: #333842;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    position: sticky;
+    height: 60px;
     width: 100%;
-}
-
-.nav-content ul {
-    list-style: none;
-    margin: 0px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.nav-content ul li {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-    height: 50px;
 }
 
 @media screen and (min-width: 480px) {    
     .nav {
         width: 95%;
-        flex-direction: column;
     }
 }
 
 @media screen and (min-width: 768px) {    
     .nav {
-        height: 60px;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         width: 90%;
-    }
-
-    .nav-content ul {
-        flex-wrap: nowrap;
-        flex-direction: row;
-        margin: 0px;
-        justify-content: center;
-        align-items: center;
-        width: calc(95% - 50px);
-        height: 100%;
-    }
-    
-    .nav-content ul li {
-        width: 20%;
-        height: 100%;
-        padding: 0px;
-        margin: 0px;
-        text-align: center;
     }
 }
 
@@ -268,11 +206,32 @@ ol li {
     }
 }
 
-.nav-content ul li:hover {
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 0px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    width: calc(90% - 50px);
+    height: 100%;
+}
+
+nav ul li {
+    width: 20%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav ul li:hover {
     background-color: #C678DD;
 }
 
-.nav-content ul li a {
+nav ul li a {
     text-decoration: none;
     color: #ABB2B1;
     width: 100%;
@@ -282,15 +241,15 @@ ol li {
     align-items: center;
 }
 
-.nav-content ul li:hover a {
+nav ul li:hover a {
     color: black;
 }
 
-.nav-content ul li.selected:hover a {
+nav ul li.selected:hover a {
     color: black;
 }
 
-.nav-content ul li.selected a {
+nav ul li.selected a {
     color: #C678DD;
 }
 
@@ -394,71 +353,4 @@ footer {
 
 #img-unidad-2 img {
     width: 100%;
-}
-
-.bibliografia-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.bibliografia {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    background-color: #21252B;
-}
-
-.bibliografia-titulo {
-    text-align: center;
-    margin-top: 0;
-}
-
-.video-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.video {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    background-color: #21252B;
-}
-
-.video-titulo {
-    text-align: center;
-    margin-top: 0;
-}
-
-.link-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.link {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    background-color: #21252B;
-}
-
-.link-titulo {
-    text-align: center;
-    margin-top: 0;
-}
-
-ul.pagination {
-    margin: 0 0;
 }

@@ -4,78 +4,302 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" 
+              href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+              crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="./css/style.css">
+        
         <title>Recursos</title>
     </head>
 
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="sobre-la-materia.html">Sobre la materia</a></li>
-                    <li><a href="recursos.html">Recursos</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <div class="banner banner-recursos">
+            </div>
         </header>
 
+        <nav class="nav-content">
+            <div class="nav">
+                <div class="logo">
+                    <img src="./images/android-chrome-192x192.png" alt="">
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="sobre-la-materia.html">Sobre la materia</a>
+                    </li>
+                    <li class="selected">
+                        <a href="recursos.html">Recursos</a>
+                    </li>
+                    <li>
+                        <a href="novedades.html">Novedades</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <main>
+            <h1>Recursos</h1>
+
             <section>
                 <h2>Bibliografía</h2>
                 
-                <div>
-                    <img src="" alt="Imagen de la bibliografía">
-                    <div>Título</div>
-                    <div>Descripcion</div>
-                </div>
-                
-                <div>
-                    <img src="" alt="Imagen de la bibliografía">
-                    <div>Título</div>
-                    <div>Descripcion</div>
-                </div>
-                
-                <div>
-                    <img src="" alt="Imagen de la bibliografía">
-                    <div>Título</div>
-                    <div>Descripcion</div>
+                <div class="bibliografia-list">
+                    <div class="card bibliografia">
+                        <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/10/fb/10fb170d7732b7dca25ebb81ded2572d.jpg" 
+                             class="card-img-top bibliografia-imagen" 
+                             alt="imagen bibliografía">
+                        <div class="card-body bibliografia-cuerpo">
+                            <h3 class="card-title bibliografia-titulo">Clean Code</h3>
+                            <p class="card-text bibliografia-descripcion">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero 
+                                optio nulla suscipit esse incidunt? Officia, praesentium quis sapiente 
+                                recusandae voluptate ratione fuga nihil quisquam qui! Exercitationem sed 
+                                doloremque cupiditate.
+                            </p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                        </div>
+                    </div>
+
+                    <div class="card bibliografia">
+                        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/c6/c6/c6c6e243cb649523104bb03655bead03.jpg" 
+                             class="card-img-top bibliografia-imagen" 
+                             alt="imagen bibliografía">
+                        <div class="card-body bibliografia-cuerpo">
+                            <h3 class="card-title bibliografia-titulo">Patrones de diseño</h3>
+                            <p class="card-text bibliografia-descripcion">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero 
+                                optio nulla suscipit esse incidunt? Officia, praesentium quis sapiente 
+                                recusandae voluptate ratione fuga nihil quisquam qui! Exercitationem sed 
+                                doloremque cupiditate.
+                            </p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card bibliografia">
+                        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/9c/68/9c68cf6da2814f472c4b2c3d97933096.jpg" 
+                             class="card-img-top bibliografia-imagen" 
+                             alt="imagen bibliografía">
+                        <div class="card-body bibliografia-cuerpo">
+                            <h3 class="card-title bibliografia-titulo">Ing. de software</h3>
+                            <p class="card-text bibliografia-descripcion">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero 
+                                optio nulla suscipit esse incidunt? Officia, praesentium quis sapiente 
+                                recusandae voluptate ratione fuga nihil quisquam qui! Exercitationem sed 
+                                doloremque cupiditate.
+                            </p>
+                            <a href="#" class="btn btn-primary">Descargar</a>
+                        </div>
+                    </div>
+
+                    <nav>
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><<</a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><</a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a class="page-link" aria-disabled="true" href="#"><strong>1</strong></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="false">></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="false">>></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </section>
 
             <section>
                 <h2>Videos</h2>
             
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KUmZp8pR1uc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KUmZp8pR1uc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KUmZp8pR1uc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video-list">
+                    <div class="card video">
+                        <iframe width="100%" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/kN1XP-Bef7w" 
+                                title="HTML desde 0" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                        <div class="card-body video-cuerpo">
+                            <h3 class="card-title video-titulo">HTML desde 0 de <strong>Soy Dalto</strong></h3>
+                            <p class="card-text video-descripcion">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero 
+                                optio nulla suscipit esse incidunt? Officia, praesentium quis sapiente 
+                                recusandae voluptate ratione fuga nihil quisquam qui! Exercitationem sed 
+                                doloremque cupiditate.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card video">
+                        <iframe width="100%" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/OWKXEJN67FE" 
+                                title="CSS desde 0" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                        <div class="card-body video-cuerpo">
+                            <h3 class="card-title video-titulo">CSS desde 0 de <strong>Soy Dalto</strong></h3>
+                            <p class="card-text video-descripcion">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero 
+                                optio nulla suscipit esse incidunt? Officia, praesentium quis sapiente 
+                                recusandae voluptate ratione fuga nihil quisquam qui! Exercitationem sed 
+                                doloremque cupiditate.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card video">
+                        <iframe width="100%" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/z95mZVUcJ-E" 
+                                title="JavaScript desde 0" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                        <div class="card-body video-cuerpo">
+                            <h3 class="card-title video-titulo">JS desde 0 de <strong>Soy Dalto</strong></h3>
+                            <p class="card-text video-descripcion">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero 
+                                optio nulla suscipit esse incidunt? Officia, praesentium quis sapiente 
+                                recusandae voluptate ratione fuga nihil quisquam qui! Exercitationem sed 
+                                doloremque cupiditate.
+                            </p>
+                        </div>
+                    </div>
+
+                    <nav>
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><<</a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><</a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a class="page-link" aria-disabled="true" href="#"><strong>1</strong></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="false">></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="false">>></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
             </section>
 
             <section>
                 <h2>Links de interés</h2>
                 
-                <div>
-                    <img src="" alt="Imagen del link">
-                    <div>Descripcion</div>
-                    <div>Link</div>
-                </div>
-                
-                <div>
-                    <img src="" alt="Imagen del link">
-                    <div>Descripcion</div>
-                    <div>Link</div>
-                </div>
-                
-                <div>
-                    <img src="" alt="Imagen del link">
-                    <div>Descripcion</div>
-                    <div>Link</div>
+                <div class="link-list">
+                    <div class="card link">
+                        <img src="https://kinsta.com/wp-content/uploads/2018/04/what-is-github-1-1.png" 
+                             class="card-img-top link-imagen" 
+                             alt="imagen link">
+                        <div class="card-body link-cuerpo">
+                            <h3 class="card-title link-titulo">Repo profe</h3>
+                            <p class="card-text link-descripcion">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero 
+                                optio nulla suscipit esse incidunt? Officia, praesentium quis sapiente 
+                                recusandae voluptate ratione fuga nihil quisquam qui! Exercitationem sed 
+                                doloremque cupiditate.
+                            </p>
+                            <a href="#" class="btn btn-primary">Ir...</a>
+                        </div>
+                    </div>
+
+                    <div class="card link">
+                        <img src="https://placekitten.com/408/287" 
+                             class="card-img-top link-imagen" 
+                             alt="imagen link">
+                        <div class="card-body link-cuerpo">
+                            <h3 class="card-title link-titulo">Placeholder con gatitos</h3>
+                            <p class="card-text link-descripcion">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero 
+                                optio nulla suscipit esse incidunt? Officia, praesentium quis sapiente 
+                                recusandae voluptate ratione fuga nihil quisquam qui! Exercitationem sed 
+                                doloremque cupiditate.
+                            </p>
+                            <a href="#" class="btn btn-primary">Ir...</a>
+                        </div>
+                    </div>
+
+                    <div class="card link">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxBDFGZ1y3DybTgbdCjTuOe1PWMkn4QtjuHbYgefV0LCymO1ZHMfbfssYKHN0pRHFHhJA" 
+                             class="card-img-top link-imagen" 
+                             alt="imagen link">
+                        <div class="card-body link-cuerpo">
+                            <h3 class="card-title link-titulo">Placeholder con perritos</h3>
+                            <p class="card-text link-descripcion">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero 
+                                optio nulla suscipit esse incidunt? Officia, praesentium quis sapiente 
+                                recusandae voluptate ratione fuga nihil quisquam qui! Exercitationem sed 
+                                doloremque cupiditate.
+                            </p>
+                            <a href="#" class="btn btn-primary">Ir...</a>
+                        </div>
+                    </div>
+
+                    <nav>
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><<</a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><</a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a class="page-link" aria-disabled="true" href="#"><strong>1</strong></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="false">></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="false">>></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </section>
         </main>
         
         <footer>
-            Copyright Programación 3 - Licencia GPLv3
+            <p>Copyright Programación 3 - Licencia GPLv3</p>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+                crossorigin="anonymous"></script>
     </body>
 </html>
