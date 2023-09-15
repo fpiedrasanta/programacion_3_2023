@@ -396,7 +396,7 @@ footer {
     width: 100%;
 }
 
-.bibliografia-list {
+#bibliografia_list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
