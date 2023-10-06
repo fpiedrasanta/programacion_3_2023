@@ -1,8 +1,8 @@
 class Bibliografia {
     constructor(bibliografia) {
-        this.urlImagen = bibliografia.urlImg;
-        this.titulo = bibliografia.title;
+        this.urlImagen = bibliografia.urlImagen;
+        this.titulo = bibliografia.titulo;
         this.descripcion = bibliografia.descripcion;
-        this.urlDescarga = bibliografia.urlDescarga;
+        this.urlDescarga = bibliografia.link;
     }
 }

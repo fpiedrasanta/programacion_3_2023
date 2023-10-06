@@ -1,7 +1,8 @@
-const bibliografias = getBibliografias();
-showBibliografia(bibliografias);
+getBibliografias(showBibliografia);
 
 function showBibliografia(bibliografias) {
+    console.log(bibliografias);
+    
     const listaBibliografia = document.getElementById("bibliografia_list");
     for(const bibliografia of bibliografias) {
         const b = new Bibliografia(bibliografia);
