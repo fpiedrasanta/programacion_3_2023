@@ -4,28 +4,33 @@ getBibliografias(showBibliografia, 1, PAGE_SIZE, "", "Title");
 
 let listBibliografy = {};
 
+const txtQuery = document.getElementById("txt_query");
+txtQuery.addEventListener("input", (evt) => {
+    getBibliografias(showBibliografia, 1, PAGE_SIZE, txtQuery.value, "Title");
+})
+
 const firstBibliografy = document.getElementById("first_bibliografy");
 
 firstBibliografy.addEventListener("click", (evt) => {
-    getBibliografias(showBibliografia, 1, PAGE_SIZE, "", "Title");
+    getBibliografias(showBibliografia, 1, PAGE_SIZE, txtQuery.value, "Title");
 });
 
 const prevBibliografy = document.getElementById("prev_bibliografy");
 
 prevBibliografy.addEventListener("click", (evt) => {
-    getBibliografias(showBibliografia, listBibliografy.prevPage, PAGE_SIZE, "", "Title");
+    getBibliografias(showBibliografia, listBibliografy.prevPage, PAGE_SIZE, txtQuery.value, "Title");
 });
 
 const nextBibliografy = document.getElementById("next_bibliografy");
 
 nextBibliografy.addEventListener("click", (evt) => {
-    getBibliografias(showBibliografia, listBibliografy.nextPage, PAGE_SIZE, "", "Title");
+    getBibliografias(showBibliografia, listBibliografy.nextPage, PAGE_SIZE, txtQuery.value, "Title");
 });
 
 const lastBibliografy = document.getElementById("last_bibliografy");
 
 lastBibliografy.addEventListener("click", (evt) => {
-    getBibliografias(showBibliografia, listBibliografy.totalPage, PAGE_SIZE, "", "Title");
+    getBibliografias(showBibliografia, listBibliografy.totalPage, PAGE_SIZE, txtQuery.value, "Title");
 });
 
 function showBibliografia(bibliografias) {
@@ -34,18 +39,10 @@ function showBibliografia(bibliografias) {
     const pageBibliografy = document.getElementById("page_bibliografy");
     pageBibliografy.innerText = listBibliografy.page;
 
-    if(!listBibliografy.hasNextPage) {
-        console.log("Ultima página");
-    }
-
-    if(!listBibliografy.hasPrevPage) {
-        console.log("Primera página");
-    }
-
-    nextBibliografy.disabled = !listBibliografy.hasNextPage;
-    lastBibliografy.disabled = !listBibliografy.hasNextPage;
-    prevBibliografy.disabled = !listBibliografy.hasPrevPage;
-    firstBibliografy.disabled = !listBibliografy.hasPrevPage;
+    nextBibliografy.style.display = listBibliografy.hasNextPage ? "block" : "none";
+    lastBibliografy.style.display = listBibliografy.hasNextPage ? "block" : "none";
+    prevBibliografy.style.display = listBibliografy.hasPrevPage ? "block" : "none";
+    firstBibliografy.style.display = listBibliografy.hasPrevPage ? "block" : "none";
 
     const listaBibliografia = document.getElementById("bibliografia_list");
 
